@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f4;
+        }
+        #counter {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        #startButton {
+            background-color: #28a745; /* Green */
+        }
+        #stopButton {
+            background-color: #dc3545; /* Red */
+        }
+        #resetButton {
+            background-color: #007bff; /* Blue */
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="counter">00:00:00:000</div>
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+    <button id="resetButton">Reset</button>
+
+    <script src="counter.js"></script>
+</body>
+</html>
